@@ -17,6 +17,7 @@ public class Mainpage extends JFrame {
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
+        #test
     }
 
     public static void main(String[] args){
