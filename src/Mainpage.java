@@ -1,19 +1,25 @@
 import javax.swing.*;
-import java.awt.*;
 
 public class Mainpage extends JFrame {
-    private JPanel mainMainPagePanel;
+    private JPanel mainPanel;
+    private JButton aktenNrButton;
+    private JButton uploadButton;
+    private JButton aktualisierenButton;
+    private JButton sortierungButton;
+    private JButton filternButton;
+    private JTree tree1;
+    private JButton downloadButton;
+    private JButton adminMenuButton;
 
     public Mainpage(){
+        setContentPane(mainPanel);
+        setTitle("Mainpage");
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setVisible(true);
     }
 
     public static void main(String[] args){
         Mainpage mainpage =new Mainpage();
-        mainpage.setTitle("Mainpage");
-        mainpage.setResizable(false);
-        mainpage.setLocationRelativeTo(null);
-        mainpage.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        mainpage.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        mainpage.setVisible(true);
     }
 }
